@@ -1,6 +1,8 @@
 console.log('Ejercicio 2: ¿cómo esta el clima hoy?')
+
 let weather_today = prompt('¿cómo esta el día hoy?')
 weather_today = weather_today.toLocaleLowerCase()
+
 if( weather_today == 'soleado' ) {
     console.log(`El día esta soleado por acá`)
 } else if ( weather_today == 'lluvioso' ) {
