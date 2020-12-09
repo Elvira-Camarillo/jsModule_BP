@@ -4,14 +4,14 @@ let weather_today = prompt('¿cómo esta el día hoy?')
 weather_today = weather_today.toLocaleLowerCase()
 
 if( weather_today === 'soleado' ) {
-    console.log(`El día esta soleado por acá`)
+    console.log(`¡Hey koder!, es un buen día para ir a playa`)
 } else if ( weather_today === 'lluvioso' ) {
-    console.log(`El día esta lluvioso por acá`)
+    console.log(`¡Hey koder!, si vas a salir de casa no olvides tu sombrilla`)
 } else if (  weather_today === 'nevando' ) {
-    console.log(`Hoy esta nevando por acá`)
+    console.log(`Hey koder, es hora de esquiar :)`)
 } else if ( weather_today === 'nublado' ) {
-    console.log(`El día esta nublado por acá`)
+    console.log(`¡Hey koder!, te sugiero disfrutar de un rico cafecito o un chocolatito `)
 } else {
-    let weather_description = prompt('Me podrías indicar el clima por favor')
-    console.log(`El clima esta: ${weather_description} hoy`)
+    let weather_description = prompt('Describeme tu día por favor')
+    console.log(`El koder dice: ${weather_description}`)
 }
