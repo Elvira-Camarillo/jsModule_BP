@@ -31,20 +31,21 @@ if(QUALIFICACTION < 50) {
 // comparar si ese numero es divisible entre 2 y 11 e imprimir en consola un mensaje indicandolo
 // sino, enviar un mensaje negandolo
 console.log('Ejercicio 2')
-const NUMBER_TO_DIVIDE = parseInt(prompt('Escribe un número entre 0 y 100'))
-if (NUMBER_TO_DIVIDE %2 === 0 && NUMBER_TO_DIVIDE % 11 === 0) {
-    console.log(`El ${NUMBER_TO_DIVIDE} es divisible entre 2 y 11`)
+const NUMBER = parseInt(prompt('Escribe un número entre 0 y 100'))
+
+if (NUMBER %2 === 0 && NUMBER% 11 === 0) {
+    console.log(`El ${NUMBER} es divisible entre 2 y 11`)
 } else {
-    console.log(`El ${NUMBER_TO_DIVIDE}  NO es divisible entre 2 y 11`)
+    console.log(`El ${NUMBER}  NO es divisible entre 2 y 11`)
 }
 
 // Exercise 3
-// pedir al usuario por prompt un numero entre 1 y 100
-// verificar si es un par o impar
-// imprimir en resultado en consola
+// Pedir al usuario por prompt un numero entre 1 y 100
+// Verificar si es un par o impar
+// Imprimir en resultado en consola
 console.log('Ejercicio 3')
-const NUMBER_EVEN = parseInt(prompt('Escribe otro un número entre 0 y 100'))
-NUMBER_EVEN % 2 === 0 ? console.log(`El ${NUMBER_EVEN} es par`):console.log(`El ${NUMBER_EVEN} es impar`)
+// const NUMBER_EVEN = parseInt(prompt('Escribe otro un número entre 0 y 100'))
+NUMBER % 2 === 0 ? console.log(`El número ${NUMBER} es par`):console.log(`El número ${NUMBER} es impar`)
 
 
 // Exercise 4
@@ -52,6 +53,34 @@ NUMBER_EVEN % 2 === 0 ? console.log(`El ${NUMBER_EVEN} es par`):console.log(`El 
 // imprimir en consola el dia de la semana equivalente
 // es decir:
 // 1 -> lunes, 2 -> martes, etc.
+console.log('Ejercicio 4')
+const NUMBER_DAY = parseInt(prompt('Escribe un número entre 1 y 7'))
+switch (NUMBER_DAY) {
+    case 1:
+        console.log('Feliz lunes')
+        break;
+    case 2:
+        console.log('Feliz martes')
+        break
+    case 3:
+        console.log('Feliz miercoles')
+        break
+    case 4:
+    console.log('Feliz jueves')
+    break
+    case 5:
+        console.log('Feliz viernes')
+        break
+    case 6:
+        console.log('Feliz sábado')
+        break
+    case 5:
+        console.log('Feliz domingo')
+        break
+    default:
+        console.log('La semana sólo tiene 7 días.')
+        break;
+}
 
 // Exercise 5
 // Pedir al usuario un numero entre 1 y 12
@@ -59,7 +88,7 @@ NUMBER_EVEN % 2 === 0 ? console.log(`El ${NUMBER_EVEN} es par`):console.log(`El 
 // p.ej.
 // 5 -> 31 días
 
-console.log('Ejericicio 5')
+console.log('Ejercicio 5')
 const NUMBER_MONTH = parseInt(prompt('Koder, por favor indica un número entre 1 y 12'))
 switch (NUMBER_MONTH) {
     case 1:
@@ -102,7 +131,7 @@ switch (NUMBER_MONTH) {
         break;
 }
 
-console.log('Ejercicio 2: Form 2')
+console.log('Ejercicio 5: Form 2')
 switch (NUMBER_MONTH) {
     case 1:
     case 3:
