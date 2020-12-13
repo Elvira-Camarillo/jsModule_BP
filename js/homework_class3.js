@@ -1,4 +1,3 @@
-
 console.log('TAREA CLASE 3') 
 // Ejercicio 1
 // Imprimir en consola la tabla del 7
@@ -15,9 +14,7 @@ console.log(tabla)
 // Ejercicio 2
 // Imprimir en consola los múltiplos de 3 y 7 que se encuentran entre el 1 y el 100
 // 3,6,7,9,12,14,15....
-console.log('Ejercicio 2'
-
-)
+console.log('Ejercicio 2')
 
 
 // Ejercicio 3
