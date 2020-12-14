@@ -10,7 +10,7 @@ function gradeLetters(averageKoder) {
     console.log(`El koder con ${averageKoder} debe tener una D`)
   } else if (averageKoder >= 50 && averageKoder < 60) {
     console.log(`El koder con ${averageKoder} debe tener una E`)
-  } else if (averageKoder < 50) {
+  } else {
     console.log(`El koder con ${averageKoder} debe tener una F`)
   } 
 }
@@ -66,7 +66,6 @@ function nameDay (numberDay) {
         break
     default:
         console.log('¡Hey Koder, La semana sólo tiene 7 días!')
-        break;
 }
   
 }
@@ -112,7 +111,6 @@ function nameMonth(numberMonth) {
     console.log('Diciembre tiene 31 días.')
   default:
     console.log('Número invalido')
-    break;
 }
 }
 
