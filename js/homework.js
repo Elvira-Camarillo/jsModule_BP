@@ -72,7 +72,7 @@ function nameDay (numberDay) {
 }
 
 
-// Fución 5: De acuerdo al número escribir el número de días que tiene el mes
+// Fución 5: De acuerdo al número escribir el nombre y número de días que tiene el mes
 function nameMonth(numberMonth) {
   switch (numberMonth) {
   case 1:
@@ -116,17 +116,66 @@ function nameMonth(numberMonth) {
 }
 }
 
-// Escribe la tabla del número indicado.
+
+// Fución 6: Escribe la tabla del número indicado.
 function tableMultiplication (number) {
   for( let i = 1; i<= 10; i++ ) {
     console.log(`${number} x ${i} = ${ number * i}`)
   }
-  
 }
 
-// Escribe la tabla de 8 al reves
-function table8Reverse () {
+
+// Función 7: Números divisibles entre 2 ó 7 del 0 al 100
+function numbersDivTwoAndSeven (numberIni, numberFin) {
+  let numberDiv = []
+  for ( let i = numberIni ; i <= numberFin; i++){
+    if( i % 3 === 0 || i % 7 === 0){
+      numberDiv.push(i)
+    }
+  }
+  console.log(`Los número de ${numberIni} a ${numberFin} divisibles entre 3 o 7 son: ${numberDiv}`)
+}
+
+
+// Función 8: Escribe la tabla de un numero al reves
+function tableReverse (numToMultiply) {
     for( let i = 1; i< 11; i++ ) {
-      console.log(`8 x ${(11 - i)} = ${8 * (11 - i)}`)
+      console.log(`${numToMultiply} x ${(11 - i)} = ${numToMultiply * (11 - i)}`)
     }
 }
+
+
+// Función 9: Cantidad de espacios que se encuentan en una cadena de texto
+function blanksString (sentence) {
+  let numberSpace = 0
+  for( let i=0; i < sentence.length; i++ ){
+    if( sentence[i] === ' ' ){
+      numberSpace += 1
+    }
+  }
+  console.log(`La oración ${sentence} tiene ${numberSpace} espacios en blanco`)
+}
+
+
+// Función 10: ¿Cuántas vocales hay en esta oración?
+function vowelsString (sentence) {
+  let numberVowels = 0
+  for( let i = 0; i<sentence.length; i++ ) {
+    if( 
+      sentence[i] === 'a' ||
+      sentence[i] === 'e' ||
+      sentence[i] === 'i' ||
+      sentence[i] === 'o' ||
+      sentence[i] === 'u' ||
+      sentence[i] === 'A' ||
+      sentence[i] === 'E' ||
+      sentence[i] === 'I' ||
+      sentence[i] === 'O' ||
+      sentence[i] === 'U'
+    ){
+      numberVowels += 1
+    }
+  }
+  console.log(`La oración ${sentence} tiene: ${numberVowels} vocales`)
+} 
+
