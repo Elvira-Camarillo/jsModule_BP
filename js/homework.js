@@ -30,7 +30,7 @@ function calculateDogAge (nameDog, ageHumanDog) {
  // Calcule el área y circunferencia de un círculo
 function calcGeometry(radio) {
   const PI = 3.1416
-  circumferenceCircle = 2 * Pi * radio
+  circumferenceCircle = 2 * PI * radio
   areaCircle = PI * radio * radio
   console.log(`El círculo con radio ${radio} tiene una circunferencia de ${circumferenceCircle} y una área de ${areaCircle}`)
 }

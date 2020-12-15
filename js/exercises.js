@@ -58,28 +58,23 @@ const resultAgeDog = ageDog(5)
 // Área de circulo
 function calcAreaCircle (radio) {
     const PI = 3.1416
-    areaCircle = PI * radio * radio
-    return areaCircle
+    return PI * radio * radio
 }
 
 // Circunferencia un circulo
 function calcCircunference (radio) {
     const PI = 3.1416
-    circumferenceCircle = 2 * PI * radio
-    return circumferenceCircle
+    return 2 * PI * radio
 }
 
 // Convertir Tempeartura
 function tempConverte (temparature, temparatureScale = 'C') {
     if ( temparatureScale === 'C') {
-        let temparatureCelsius = (1.8 * temparature) + 32
-        return temparatureCelsius
+        return (1.8 * temparature) + 32
     } else if ( temparatureScale === 'F' ) {
-        let temparatureFarenheit =  (temparature - 32) / 1.8
-        return temparatureFarenheit
+        return (temparature - 32) / 1.8
     } else {
-        let messageError = 'Sólo se pueden calcular grados Celsius o Farenheit'
-        return messageError
+        return 'Sólo se pueden calcular grados Celsius o Farenheit'
     }
 }
 
