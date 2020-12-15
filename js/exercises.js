@@ -42,11 +42,6 @@ function calculateDogAge (nameDog, ageHumanDog) {
 
 // Ejercicios convertir las funciones anteriores a funciones de retorno
 
-function add (a, b) {
-    let c = a + b
-    return c
-}
- const result = add (2, 5)
 
 // Edad del  un perro en años canino 1 x 7 años
 function ageDog (ageHumanDog) {
@@ -87,3 +82,9 @@ function tempConverte (temparature, temparatureScale = 'C') {
     return total
   }
 
+function add (a, b) {
+  let c = a + b
+  return c
+}
+
+const addThowFactorial = add (getFactorialNumber(3), getFactorialNumber(4))
