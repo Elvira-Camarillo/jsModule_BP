@@ -1,5 +1,5 @@
 // Ejercicio 1
-// dado el siguiene array de objetos
+// Dado el siguiene array de objetos
 let users = [
     { firstName: 'Bradley', lastName: 'Bouley', role: 'Full Stack Resident' },
     { firstName: 'Chloe', lastName: 'Alnaji', role: 'Full Stack Resident' },
@@ -10,7 +10,7 @@ let users = [
     { firstName: 'Zach', lastName: 'Klabunde', role: 'Instructor'}
 ];
 
-// obtener un nuevo array con esta estructura
+// Obtener un nuevo array con esta estructura
 //-> {
 //    'Bradley Bouley': 'Full Stack Resident',
 //   'Chloe Alnaji': 'Full Stack Resident'
@@ -24,13 +24,10 @@ const joinUsers = users.reduce( (acc, user) => {
 }, {})
 
 
-
-
 //  tomando el array users,
 //  hacer una funcion que reciba 2 parametros (arrayUsers, role)
 //  y retorne un array con los usuarios que cumplan con el role
 const filterUserByRole = (arr, role) => arr.filter(user => user.role === role )
-
 
 // ejercicio 3
 // tomando el siguiente array de objetos
@@ -53,7 +50,7 @@ let persons = [
 ]
 
 const personVoted = persons.reduce( (acc, person) => {
-    return person.voted == true ? acc + 1: acc
+    return person.voted === true ? acc + 1: acc
 }, 0);
 console.log(personVoted)
 
@@ -62,3 +59,25 @@ const averageAgeVoters = persons.reduce( (acc, person) => {
 }, 0) / persons.length
 
 console.log(averageAgeVoters)
+
+
+// Array dos dimensiones 
+let numbersReduce = [
+    [1,2,4],
+    [1,2,8],
+    [1,9,3]
+]
+
+ let numberTotal = numbersReduce.reduce((acc, numArray) => {
+    let sumArray = numArray.reduce( (total, number) => total + number, 0)
+    let arraySum = acc + sumArray
+    return arraySum
+},0)
+console.log(numberTotal)
+
+const numbersReduceTotal = arr => {
+    return arr.reduce((acc, numArray) => {
+        return acc + numArray.reduce( (total, number) => total + number, 0)
+    },0)
+}
+
