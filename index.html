@@ -3,17 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>moduleJS</title>
+    <title>Class11</title>
    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Hola Koders!!</h1>
-    <h2>Este es el modulo de JS del Bootcamp de Python</h2>
-    <img src="./img/js-logo.png" alt="">
-    <h3>Comenzando   ...</h3>
+    <h1>Soy programador JS</h1>
 
+    <button onclick="addElements('#lista',4,kodersArr)" >Mostar Lista</button>
+    <button onclick="filterKoder('A')">A</button>
+    <button onclick="filterKoder('O')">O</button>
+    <button onclick="filterKoder('R')">R</button>
 
+    <select name="" id="orden">
+        <option value="">Seleccionar</option>
+        <option value="a">Ascendente</option>
+        <option value="d">Descendente</option>
+    </select>
 
-    <script src="./js/main.js"></script>
+    <ul  id='lista'>
+    </ul>
+
+ 
+
+    <script src="./js/dom.js"></script>
 </body>
 </html>
