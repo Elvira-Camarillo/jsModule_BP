@@ -10,14 +10,21 @@
     <h1>Soy programador JS</h1>
 
     <button onclick="addElements('#lista',4,kodersArr)" >Mostar Lista</button>
-    <button onclick="filterKoder('A')">A</button>
+    <!-- <button onclick="filterKoder('A')">A</button>
     <button onclick="filterKoder('O')">O</button>
-    <button onclick="filterKoder('R')">R</button>
+    <button onclick="filterKoder('R')">R</button>  -->
 
-    <select name="" id="orden">
-        <option value="">Seleccionar</option>
+    <select name="" id="order_list" onchange="filterAZ()">
+        <option value="" selected>Seleccionar orden</option>
         <option value="a">Ascendente</option>
         <option value="d">Descendente</option>
+    </select>
+
+    <select name="" id="orderLetter" onchange="filterAZ()">
+        <option value="" selected>Seleccionar AZ</option>
+        <option value="a">a</option>
+        <option value="r">r</option>
+        <option value="e">e</option>
     </select>
 
     <ul  id='lista'>
@@ -26,5 +33,7 @@
  
 
     <script src="./js/dom.js"></script>
+    <script src="./js/homework.js"></script>
+    <script src="/js/events.js"></script>
 </body>
 </html>

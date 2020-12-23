@@ -20,21 +20,14 @@ const addElements = (selector,numberElement, arrNames ) => {
     });
     document.querySelector(''+selector).innerHTML = listKoders
 }
-let kodersArr = ['Ale','Ruben','Oscar','Elvira']
 
+
+let kodersArr = ['Ale','Ruben','Oscar','Elvira','Alex','Rosa','Oscarin','Elvia']
 
 
 const filterKoder = letter => {
-    let filtrados= kodersArr.filter( (koder) => {
+    let filtrados = kodersArr.filter( (koder) => {
         return  koder.toLowerCase().startsWith(letter.toLowerCase())
     })
     addElements('#lista',filtrados.length,filtrados)
 }
-
-// onchange()
-// Construir una funcion con filter 
-// ocupar un método
-// innerHTML
-// lo tieene que separar el selector
-
-// document.getElemntByID('orden').value
