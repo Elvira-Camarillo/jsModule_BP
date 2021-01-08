@@ -1,8 +1,36 @@
 * {
-    background-color:#FAD02C;
-    /* background-color:#F3E2A9; */
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
-img {
-    color: black;
+.name_class{
+    background-color: #ef4f4f;
+    border: 2px solid #a9294f;
+    padding: 20px 0;
+    margin-top: 10px;
+    color: white;
+}
+.container_box{
+    background-color:#ee9595;
+    border: solid 2px #ef4f4f;
+    padding: 20px 0;
+}
+
+.d-none {
+    display: none;
+}
+.d-block {
+    display: block;
+}
+
+#session{
+    background-color:#ffcda3;
+    border: solid 2px #ff577f;
+    padding: 20px 0;
+
+}
+.message {
+    padding: 20px 0;
+    background-color:#74c7b8;
+    border: solid 2px #00917c;
 }
