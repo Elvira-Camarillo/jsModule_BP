@@ -9,31 +9,39 @@
 <body>
     <h1>Soy programador JS</h1>
 
-    <button onclick="addElements('#lista',4,kodersArr)" >Mostar Lista</button>
+    <button id="showAll" >Todos</button>
     <!-- <button onclick="filterKoder('A')">A</button>
     <button onclick="filterKoder('O')">O</button>
     <button onclick="filterKoder('R')">R</button>  -->
 
-    <select name="" id="order_list" onchange="filterAZ()">
+    <select name="" id="order_list" >
         <option value="" selected>Seleccionar orden</option>
-        <option value="a">Ascendente</option>
+        <option value="a" onclick="filterAZ('a')">Ascendente</option>
         <option value="d">Descendente</option>
     </select>
 
-    <select name="" id="orderLetter" onchange="filterAZ()">
+    <!-- <select name="" id="orderLetter">
         <option value="" selected>Seleccionar AZ</option>
         <option value="a">a</option>
         <option value="r">r</option>
         <option value="e">e</option>
-    </select>
+    </select> -->
+
+   <input type="text" placeholder="Busca tu koder" class="search">
 
     <ul  id='lista'>
     </ul>
 
+    <form action="">
+        <input type="text" id="email">
+        <input type="password" id="pass">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+
  
 
     <script src="./js/dom.js"></script>
-    <script src="./js/homework.js"></script>
     <script src="/js/events.js"></script>
+    <script src="./js/event-listener.js"></script>
 </body>
 </html>

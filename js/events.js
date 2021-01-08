@@ -18,14 +18,23 @@ const filterKoderSelectAZ =( letter )=> {
     return filtrados
 }
 
+// const filterAZ = () => {
+//     let valorderaz = document.getElementById('orderLetter').value
+//     let arrarKoders = filterKoderSelectAZ(valorderaz ? valorderaz:'')
+//     let resultadoKoders = filterKoderSelectAD(arrarKoders)
+
+//     console.log(arrarKoders)
+//     console.log(resultadoKoders)
+
+//     addElements('#lista', resultadoKoders.length, resultadoKoders)
+// }
 const filterAZ = () => {
-    let valorderaz = document.getElementById('orderLetter').value
-    let arrarKoders = filterKoderSelectAZ(valorderaz)
-    let resultadoKoders = filterKoderSelectAD(arrarKoders)
-
-    console.log(arrarKoders)
+    let valorderad = document.getElementById('order_list').value
+    console.log(valorderad)
+    let valorderaz = document.getElementById('orderletter').value
+    let resultadoKoders = filterKodersSelectAD(kodersArr)
     console.log(resultadoKoders)
-
-    addElements('#lista', resultadoKoders.length, resultadoKoders)
+    let arrayKoders = filterKodersSelectAZ(valorderad)
+    console.log(arrayKoders)
+    addElements('#lista', resultadoKoders.length , arrayKoders)
 }
-
