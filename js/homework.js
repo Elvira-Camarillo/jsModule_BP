@@ -7,9 +7,9 @@
 
 const isCookie = () => {
     if(document.cookie.includes('sessionuser=true')){
-        window.open("/login.html","login")
-    } else {
         window.open("/user.html","user")
+    } else {
+        window.open("/login.html","login")
     }
 }
 window.addEventListener('load', isCookie)
@@ -22,6 +22,7 @@ window.addEventListener('load', isCookie)
 // aparecer el mensaje
 // sino
 // desaparecer el mensaje
+ 
 const showHideDiv = () =>  {
     if (window.innerWidth <= 767){
         document.querySelector('.message').classList.remove('d-block')
@@ -32,8 +33,28 @@ const showHideDiv = () =>  {
     }
 }
 
-window.addEventListener('resize',showHideDiv)
 window.addEventListener('load',showHideDiv)
+window.addEventListener('resize',showHideDiv)
 
 // utilizar css
 // no usar inline styles
+
+
+// Solucón Mentor
+// const checkSession = () => {
+//     const cookieUSer = document.cookie
+//     if(cookieUSer.cookie.includes('sessionusers=1234')){
+//         if (window.location.pathname !== '/user.html'){
+//             location.pathname='/user.html'
+//         }
+//     } else {
+//         document.cookie = 'sessionusers=1234'
+//         location.pathname='./login.html'
+//     }
+// }
+
+// window.addEventListener('load', function(){
+//     console.log('Pagina cargada')
+//     checkSession()
+    
+// })
