@@ -1,7 +1,5 @@
 * {
-    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
 }
 .name_class{
     background-color: #ef4f4f;
@@ -9,28 +7,16 @@
     padding: 20px 0;
     margin-top: 10px;
     color: white;
+    text-align: center;
 }
-.container_box{
-    background-color:#ee9595;
-    border: solid 2px #ef4f4f;
-    padding: 20px 0;
+.btn{
+    border-radius: 10px;
+    padding: 10px;
 }
-
-.d-none {
-    display: none;
-}
-.d-block {
-    display: block;
+.btn_user {
+    background-color: #949cdf;
 }
 
-#session{
-    background-color:#ffcda3;
-    border: solid 2px #ff577f;
-    padding: 20px 0;
-
-}
-.message {
-    padding: 20px 0;
-    background-color:#74c7b8;
-    border: solid 2px #00917c;
+.btn_post {
+    background-color: #a7c5eb;
 }
