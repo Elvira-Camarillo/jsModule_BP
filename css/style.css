@@ -4,19 +4,10 @@
 .name_class{
     background-color: #ef4f4f;
     border: 2px solid #a9294f;
-    padding: 20px 0;
-    margin-top: 10px;
-    color: white;
     text-align: center;
 }
-.btn{
-    border-radius: 10px;
-    padding: 10px;
-}
-.btn_user {
-    background-color: #949cdf;
-}
 
-.btn_post {
-    background-color: #a7c5eb;
+.btn_send{
+    background-color: #949cdf;
+    font-weight: 700;
 }
